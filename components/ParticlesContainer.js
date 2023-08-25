@@ -41,17 +41,17 @@ const ParticlesContainer = () => {
               quantity: 90,
             },
             repulse: {
-              distance: 200,
+              distance: 150,
               duration: 0.4,
             },
           },
         },
         particles: {
           color: {
-            value: "#e68e2e",
+            value: "#666666",
           },
           links: {
-            color: "#f5d393",
+            color: "",
             distance: 150,
             enable: true,
             opacity: 0.5,
