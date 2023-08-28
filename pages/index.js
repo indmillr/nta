@@ -69,15 +69,6 @@ const Home = () => {
           >
             <ProjectsBtn />
           </motion.div>
-          <motion.p
-            variants={fadeIn("up", 0.6)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mt-10 xl:mb-16 text-black"
-          >
-            Something here?
-          </motion.p>
         </div>
       </div>
       {/* image */}

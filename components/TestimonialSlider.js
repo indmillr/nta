@@ -2,98 +2,106 @@
 const testimonialData = [
   {
     image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
+    name: "White Belt",
+    position: "19",
+    foot: "Left",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-2.png",
-    name: "Jane Doe",
+    name: "Yellow Belt",
     position: "Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "High Yellow Belt",
     position: "Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "Green Belt",
     position: "Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "High Green Belt",
     position: "Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "Blue Belt",
     position: "Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "High Blue Belt",
     position: "Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "Purple Belt",
     position: "Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "Red Belt 1",
     position: "Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "Red Belt 2",
     position: "Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "Red Belt 3",
     position: "Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "Red Belt 4",
     position: "Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "Brown Belt",
     position: "Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
+    name: "High Brown Belt",
+    position: "Customer",
+    message:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+  },
+  {
+    image: "/t-avt-3.png",
+    name: "Black Belt",
     position: "Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
@@ -139,8 +147,17 @@ const TestimonialSlider = () => {
                   {/* name */}
                   <div className="text-lg">{person.name}</div>
                   {/* position */}
-                  <div className="text-[12px] uppercase font-extralight tracking-widest">
+                  <div>
+                    <span className="text-[12px] uppercase font-extralight tracking-widest">
+                      MOVES:{" "}
+                    </span>{" "}
                     {person.position}
+                  </div>
+                  <div>
+                    <span className="text-[12px] uppercase font-extralight tracking-widest">
+                      Return foot:{" "}
+                    </span>{" "}
+                    {person.foot}
                   </div>
                 </div>
               </div>
@@ -151,7 +168,7 @@ const TestimonialSlider = () => {
                   <FaQuoteLeft className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0" />
                 </div>
                 {/* message */}
-                <div className="xl:text-lg text-center md:text-left">
+                <div className="xl:text-lg text-center md:text-left mb-8">
                   {person.message}
                 </div>
               </div>

@@ -7,7 +7,7 @@ import { fadeIn } from "../../variants";
 
 const Testimonials = () => {
   return (
-    <div className="h-full bg-primary/30 py-32 text-center">
+    <div className="h-full bg-primary py-32 text-center text-black">
       <div className="container mx-auto h-full flex flex-col justify-center">
         {/* title */}
         <motion.h2
@@ -17,7 +17,7 @@ const Testimonials = () => {
           exit="hidden"
           className="h2 mb-8 xl:mb-0"
         >
-          What clients <span className="text-accent">say.</span>
+          Form <span className="text-accent">meanings.</span>
         </motion.h2>
         {/* slider */}
         <motion.div

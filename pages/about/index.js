@@ -1,21 +1,7 @@
 import React, { useState } from "react";
 
 // icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
-
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
+import Image from "next/image";
 
 //  data
 const aboutData = [
@@ -34,7 +20,7 @@ const aboutData = [
     info: [
       {
         title:
-          "Self-Defense is incorporated into our classes with a set curriculum designed for each belt level. As students progress through the belt ranks, we teach a variety of self-defense, making sure to add to the skill, technique, and difficulty. We also have additional self-defense classes scheduled throughout the year.",
+          "Self-Defense is incorporated into our classes with a curriculum designed for each belt level. As students progress through the ranks, we teach a variety of self-defense, adding to the skill, technique, and difficulty.",
       },
     ],
   },
@@ -108,8 +94,8 @@ const About = () => {
       >
         <Avatar />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        <div className="flex-1 flex flex-col justify-center xl:mb-40 mt-0">
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 mb-0">
+        <div className="flex-1 flex flex-col justify-center xl:mb-40 mt-0 mb-0">
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -124,7 +110,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-left text-black lg:text-justify max-w-[500px] mx-auto xl:mx-0 mb-5 xl:mb-5 px-2 xl:px-0"
+            className="text-left text-black lg:text-justify max-w-[500px] mx-auto xl:mx-0 xl:mb-5 px-2 xl:px-0 mb-3"
           >
             Our primary patterns are traditional TaeKwon-Do patterns created by
             General Choi Hong Hi, known as the{" "}
@@ -132,25 +118,30 @@ const About = () => {
             teach a set of secondary patterns known as{" "}
             <span className="font-semibold">Choong Sil Kwan</span>.
           </motion.p>
-
-          <motion.p
-            variants={fadeIn("right", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="text-center text-blue-600 lg:text-justify max-w-[500px] mx-auto xl:mx-0 mb-8 px-2 xl:px-0 font-semibold"
-          >
-            NTA is a member of the American Marital Arts Alliance.
-          </motion.p>
           {/* counters */}
           <motion.div
-            variants={fadeIn("right", 0.6)}
+            variants={fadeIn("left", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-0"
+            className="md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-0"
           >
-            <div className="flex flex-1 xl:gap-x-6">AMA ICONS</div>
+            <div className="hidden mx-auto sm:flex flex-1 mb-0">
+              <Image
+                src={"/../public/AMAlogo2.png"}
+                width={100}
+                height={100}
+                alt=""
+                className="w-full h-full max-w-[215px] max-h-[215px]"
+              />{" "}
+              <Image
+                src={"/../public/UTAlogo.png"}
+                width={100}
+                height={100}
+                alt=""
+                className="w-full h-full max-w-[225px] max-h-[225px]"
+              />
+            </div>
           </motion.div>
         </div>
         {/* info */}
@@ -159,17 +150,17 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px] mt-1"
         >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-5">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
-                    "text-accent after:w-[100%] after:bg-black/50 after:transition-all after:duration-300"
-                  } cursor-pointer capitalize xl:text-lg relative after:w-0 after:h-[2px] after:bg-black/50 after:absolute after:-bottom-1 after:left-0`}
+                    "text-accent after:w-[100%] after:bg-black/50 after:transition-all after:duration-300 font-semibold"
+                  } cursor-pointer capitalize text-sm sm:text-lg relative after:w-0 after:h-[2px] after:bg-black/50 after:absolute font-semibold after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
@@ -185,7 +176,7 @@ const About = () => {
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-black"
                 >
                   {/* title */}
-                  <div className="font-light mb-2 md:mb-0 text-justify mx-3">
+                  <div className="font-light mb-2 md:mb-0 text-left lg:text-justify mx-3">
                     {item.title}
                   </div>
                   <div className="hidden md:flex"></div>

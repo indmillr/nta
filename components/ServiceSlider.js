@@ -22,32 +22,45 @@ import { FreeMode, Pagination } from "swiper";
 // data
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "MON",
+    time1: "5:00",
+    description1: "Green - Purple",
+    time2: "5:45",
+    description2: "White - Yellow",
+    time3: "6:30",
+    description3: "Red - Black",
   },
   {
-    icon: <RxPencil2 />,
-    title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "TUE",
+    time1: "5:00",
+    description1: "White - Yellow",
+    time2: "5:45",
+    description2: "Green - Purple",
+    time3: "6:30",
+    description3: "Red - Black",
   },
   {
-    icon: <RxDesktop />,
-    title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "WED",
+    time1: "5:00",
+    description1: "KIDS ONLY (ages 5-8)",
+    time2: "6:00",
+    description2: "Red - Black",
   },
   {
-    icon: <RxReader />,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "THU",
+    time1: "5:15",
+    description1: "White - Black",
+    time2: "6:15",
+    description2: "Green - Black",
   },
   {
-    icon: <RxRocket />,
-    title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "FRI",
+    time1: "6:00",
+    description1: "FORMS (All Ranks)",
+    time2: "7:00",
+    description2: "SPARRING",
   },
 ];
-
 const ServiceSlider = () => {
   return (
     <Swiper
@@ -56,8 +69,16 @@ const ServiceSlider = () => {
           slidesPerView: 1,
           spaceBetween: 15,
         },
-        640: {
+        641: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        960: {
           slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        1200: {
+          slidesPerView: 2,
           spaceBetween: 15,
         },
       }}
@@ -71,20 +92,32 @@ const ServiceSlider = () => {
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
+            <div className="bg-black/5 h-max rounded-lg px-4 pt-4 mr-4 pb-0 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-black/10 transition-all duration-300">
               {/* icons */}
-              <div className="text-4xl text-accent mb-4">{item.icon}</div>
+              <div className="text-xl text-accent mb-4">{item.title}</div>
               {/* title & desc */}
               <div className="mb-8 ">
-                <div className="mb-2 text-lg">{item.title}</div>
-                <p className="max-w-[350px] leading-normal">
-                  {item.description}
-                </p>
+                <div className="mb-2 text-blue-600">
+                  {item.time1} {""}
+                  <span className="max-w-[350px] ml-2 mr-0 leading-normal text-black">
+                    {item.description1}
+                  </span>
+                </div>
+
+                <div className="mb-2 text-blue-600">
+                  {item.time2} {""}
+                  <span className="max-w-[350px] ml-2 leading-normal text-black">
+                    {item.description2}
+                  </span>
+                </div>
+                <div className="mb-2 text-blue-600">
+                  {item.time3} {""}
+                  <span className="max-w-[350px] ml-2 leading-normal text-black">
+                    {item.description3}
+                  </span>
+                </div>
               </div>
               {/* arrow */}
-              <div className="text-3xl">
-                <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
-              </div>
             </div>
           </SwiperSlide>
         );
