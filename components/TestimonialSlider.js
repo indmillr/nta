@@ -2,108 +2,119 @@
 const testimonialData = [
   {
     image: "/t-avt-1.png",
-    name: "White Belt",
-    position: "19",
+    title: "Chon-Ji",
+    belt: "White",
+    moves: "19",
     foot: "Left",
-    message:
+    meaning:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
-    image: "/t-avt-2.png",
-    name: "Yellow Belt",
-    position: "Customer",
-    message:
+    image: "/t-avt-1.png",
+    title: "Dan-Gun",
+    belt: "Yellow",
+    moves: "19",
+    foot: "Left",
+    meaning:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
-    image: "/t-avt-3.png",
-    name: "High Yellow Belt",
-    position: "Customer",
-    message:
+    image: "/t-avt-1.png",
+    title: "Do-San",
+    belt: "High Yellow",
+    moves: "19",
+    foot: "Left",
+    meaning:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Green Belt",
-    position: "Customer",
-    message:
+    image: "/t-avt-1.png",
+    title: "Won-Hyo",
+    belt: "Green",
+    moves: "19",
+    foot: "Left",
+    meaning:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
-    image: "/t-avt-3.png",
-    name: "High Green Belt",
-    position: "Customer",
-    message:
+    image: "/t-avt-1.png",
+    title: "Yul-Gok",
+    belt: "High Green",
+    moves: "19",
+    foot: "Left",
+    meaning:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Blue Belt",
-    position: "Customer",
-    message:
+    image: "/t-avt-1.png",
+    title: "Joong-Gun",
+    belt: "Blue",
+    moves: "19",
+    foot: "Left",
+    meaning:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
-    image: "/t-avt-3.png",
-    name: "High Blue Belt",
-    position: "Customer",
-    message:
+    image: "/t-avt-1.png",
+    title: "Toi-Gye",
+    belt: "High Blue",
+    moves: "19",
+    foot: "Left",
+    meaning:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Purple Belt",
-    position: "Customer",
-    message:
+    image: "/t-avt-1.png",
+    title: "(Review)",
+    belt: "Purple",
+    moves: "19",
+    foot: "Left",
+    meaning:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Red Belt 1",
-    position: "Customer",
-    message:
+    image: "/t-avt-1.png",
+    title: "Hwa-Rang",
+    belt: "Red I/II",
+    moves: "19",
+    foot: "Left",
+    meaning:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Red Belt 2",
-    position: "Customer",
-    message:
+    image: "/t-avt-1.png",
+    title: "Choong-Moo",
+    belt: "Red III/IV",
+    moves: "19",
+    foot: "Left",
+    meaning:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Red Belt 3",
-    position: "Customer",
-    message:
+    image: "/t-avt-1.png",
+    title: "Kwang-Gae",
+    belt: "Brown",
+    moves: "19",
+    foot: "Left",
+    meaning:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Red Belt 4",
-    position: "Customer",
-    message:
+    image: "/t-avt-1.png",
+    title: "Po Eun",
+    belt: "High Brown",
+    moves: "19",
+    foot: "Left",
+    meaning:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Brown Belt",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
-  },
-  {
-    image: "/t-avt-3.png",
-    name: "High Brown Belt",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
-  },
-  {
-    image: "/t-avt-3.png",
-    name: "Black Belt",
-    position: "Customer",
-    message:
+    image: "/t-avt-1.png",
+    title: "Gae-Baek",
+    belt: "Black",
+    moves: "19",
+    foot: "Left",
+    meaning:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
 ];
@@ -120,7 +131,6 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 
 // icons
-import { FaQuoteLeft } from "react-icons/fa";
 import Image from "next/image";
 
 const TestimonialSlider = () => {
@@ -133,7 +143,7 @@ const TestimonialSlider = () => {
       modules={[Navigation, Pagination]}
       className="h-[400px]"
     >
-      {testimonialData.map((person, index) => {
+      {testimonialData.map((pattern, index) => {
         return (
           <SwiperSlide key={index}>
             <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
@@ -142,34 +152,41 @@ const TestimonialSlider = () => {
                 <div className="flex flex-col justify-center text-center">
                   {/* avatar */}
                   <div className="mb-2 mx-auto">
-                    <Image src={person.image} width={100} height={100} alt="" />
+                    <Image
+                      src={pattern.image}
+                      width={100}
+                      height={100}
+                      alt=""
+                    />
                   </div>
-                  {/* name */}
-                  <div className="text-lg">{person.name}</div>
+
                   {/* position */}
-                  <div>
-                    <span className="text-[12px] uppercase font-extralight tracking-widest">
-                      MOVES:{" "}
-                    </span>{" "}
-                    {person.position}
-                  </div>
-                  <div>
-                    <span className="text-[12px] uppercase font-extralight tracking-widest">
-                      Return foot:{" "}
-                    </span>{" "}
-                    {person.foot}
+                  <div className="">{pattern.belt}</div>
+                  <div className="flex flex-col text-left pt-2">
+                    <div>
+                      <span className="text-[12px] uppercase font-light tracking-widest">
+                        MOVES:{" "}
+                      </span>{" "}
+                      {pattern.moves}
+                    </div>
+                    <div>
+                      <span className="text-[12px] uppercase font-light tracking-widest">
+                        Return foot:{" "}
+                      </span>{" "}
+                      {pattern.foot}
+                    </div>
                   </div>
                 </div>
               </div>
               {/* quote & message */}
               <div className="flex-1 flex flex-col justify-center items-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
                 {/* quote icon */}
-                <div className="mb-4">
-                  <FaQuoteLeft className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0" />
+                <div className="mb-4 text-blue-600 text-2xl lg:text-3xl uppercase tracking-widest">
+                  {pattern.title}
                 </div>
                 {/* message */}
-                <div className="xl:text-lg text-center md:text-left mb-8">
-                  {person.message}
+                <div className="text-left lg:text-justify mb-8">
+                  {pattern.meaning}
                 </div>
               </div>
             </div>

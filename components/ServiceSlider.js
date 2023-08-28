@@ -97,22 +97,22 @@ const ServiceSlider = () => {
               <div className="text-xl text-accent mb-4">{item.title}</div>
               {/* title & desc */}
               <div className="mb-8 ">
-                <div className="mb-2 text-blue-600">
+                <div className="mb-2 text-blue-600 font-mono">
                   {item.time1} {""}
-                  <span className="max-w-[350px] ml-2 mr-0 leading-normal text-black">
+                  <span className="max-w-[350px] ml-2 mr-0 leading-normal text-black font-sora">
                     {item.description1}
                   </span>
                 </div>
 
-                <div className="mb-2 text-blue-600">
+                <div className="mb-2 text-blue-600 font-mono">
                   {item.time2} {""}
-                  <span className="max-w-[350px] ml-2 leading-normal text-black">
+                  <span className="max-w-[350px] ml-2 font-sora leading-normal text-black">
                     {item.description2}
                   </span>
                 </div>
-                <div className="mb-2 text-blue-600">
+                <div className="mb-2 text-blue-600 font-mono">
                   {item.time3} {""}
-                  <span className="max-w-[350px] ml-2 leading-normal text-black">
+                  <span className="max-w-[350px] font-sora ml-2 leading-normal text-black">
                     {item.description3}
                   </span>
                 </div>
