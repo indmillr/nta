@@ -82,7 +82,7 @@ const About = () => {
 
   return (
     <div className="h-full bg-primary py-32 text-center xl:text-left text-black">
-      <Circles />
+      {/* <Circles /> */}
 
       {/* avatar img */}
       <motion.div
@@ -95,7 +95,7 @@ const About = () => {
         <Avatar />
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 mb-0">
-        <div className="flex-1 flex flex-col justify-center xl:mb-40 mt-0 mb-0">
+        <div className="flex-1 flex flex-col justify-center xl:mb-4 mt-0 mb-0">
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -110,7 +110,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-left text-black lg:text-justify max-w-[500px] mx-auto xl:mx-0 xl:mb-5 px-2 xl:px-0 mb-9"
+            className="text-left text-black lg:text-justify max-w-[500px] mx-auto xl:mx-0 xl:mb-5 px-2 xl:px-0 mb-4 xl:mb-9"
           >
             Our primary patterns are traditional TaeKwon-Do patterns created by
             General Choi Hong Hi, known as the{" "}

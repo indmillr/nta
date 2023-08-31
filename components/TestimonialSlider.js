@@ -2,12 +2,11 @@
 const testimonialData = [
   {
     image: "/t-avt-1.png",
-    title: "Chon-Ji",
+    title: "Chon Ji",
     belt: "White",
     moves: "19",
     foot: "Left",
-    meaning:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+    meaning: "Heaven and Earth.",
   },
   {
     image: "/t-avt-1.png",
@@ -159,19 +158,15 @@ const TestimonialSlider = () => {
                       alt=""
                     />
                   </div>
-
                   {/* position */}
-                  <div className="">{pattern.belt}</div>
-                  <div className="flex flex-col text-left pt-2">
+                  <div className="uppercase font-bold tracking-widest">{pattern.belt}</div>
+                  <div className="flex flex-col text-left">
                     <div>
                       <span className="text-[12px] uppercase font-light tracking-widest">
                         MOVES:{" "}
                       </span>{" "}
-                      {pattern.moves}
-                    </div>
-                    <div>
-                      <span className="text-[12px] uppercase font-light tracking-widest">
-                        Return foot:{" "}
+                      {pattern.moves}  <span className="text-[12px] ml-3 uppercase font-light tracking-widest">
+                        foot:{" "}
                       </span>{" "}
                       {pattern.foot}
                     </div>
@@ -179,9 +174,9 @@ const TestimonialSlider = () => {
                 </div>
               </div>
               {/* quote & message */}
-              <div className="flex-1 flex flex-col justify-center items-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
+              <div className="flex-1 flex flex-col justify-center items-center before:w-[1px] xl:before:bg-black/50 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
                 {/* quote icon */}
-                <div className="mb-4 text-blue-600 text-2xl lg:text-3xl uppercase tracking-widest">
+                <div className="mb-2 lg:mb-4 mt-0 lg:mt-0 text-blue-600 md:text-2xl font-bold lg:font-normal lg:text-3xl uppercase tracking-widest">
                   {pattern.title}
                 </div>
                 {/* message */}

@@ -15,7 +15,7 @@ const Testimonials = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="h2 mb-8 xl:mb-0"
+          className="h2 mb-3 xl:mb-0"
         >
           Form <span className="text-accent">meanings.</span>
         </motion.h2>
