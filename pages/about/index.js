@@ -110,7 +110,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-left text-black lg:text-justify max-w-[500px] mx-auto xl:mx-0 xl:mb-5 px-2 xl:px-0 mb-4 xl:mb-9"
+            className="text-left text-black lg:text-justify max-w-[500px] mx-auto xl:mx-0 xl:mb-5 px-2 xl:px-0 mb-4"
           >
             Our primary patterns are traditional TaeKwon-Do patterns created by
             General Choi Hong Hi, known as the{" "}
