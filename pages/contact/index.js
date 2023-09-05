@@ -32,7 +32,7 @@ const Contact = () => {
             <br />
             Nixa, MO 65714
             <br />
-            <span className="text-accent font-semibold">(417) 860-5220</span>
+            <span className="text-accent font-semibold"><a href="tel:417-860-5220">(417) 860-5220</a></span>
           </motion.p>
           <motion.h2
             variants={fadeIn("up", 0.2)}
