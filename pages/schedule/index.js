@@ -49,7 +49,7 @@ const Schedule = () => {
 
           {/* slider */}
           <motion.div
-            variants={fadeIn("down", 0.6)}
+            variants={fadeIn("down", 0.8)}
             initial="hidden"
             animate="show"
             exit="hidden"

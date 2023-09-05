@@ -21,7 +21,7 @@ const Forms = () => {
         </motion.h2>
         {/* slider */}
         <motion.div
-          variants={fadeIn("up", 0.4)}
+          variants={fadeIn("down", 0.6)}
           initial="hidden"
           animate="show"
           exit="hidden"
