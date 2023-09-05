@@ -149,17 +149,17 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px] mt-1"
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
         >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-5">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-5 text-blue-600 font-semibold">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
-                    "text-accent after:w-[100%] after:bg-black/50 after:transition-all after:duration-300 font-semibold"
-                  } cursor-pointer capitalize text-sm sm:text-lg relative after:w-0 after:h-[2px] after:bg-black/50 after:absolute font-semibold after:-bottom-1 after:left-0`}
+                    "text-accent after:w-[100%] after:bg-black/50 after:transition-all after:duration-300 font-bold"
+                  } cursor-pointer capitalize text-lg relative after:w-0 after:h-[2px] after:bg-black/50 after:absolute md:font-semibold after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
@@ -179,7 +179,7 @@ const About = () => {
                     {item.title}
                   </div>
                   <div className="hidden md:flex"></div>
-                  <div className="font-semibold">{item.stage}</div>
+                  <div className="">{item.stage}</div>
                   <div className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
