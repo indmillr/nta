@@ -9,23 +9,24 @@ import Socials from "../components/Socials";
 
 const Header = () => {
   return (
-    <header className="absolute z-30 w-full flex items-center pl-3 pt-3">
-     
-        <div className="flex flex-col">
+    <header className="absolute z-30 w-full flex xl:h-[90px]">
+      <div className="container mx-auto">
+        <div className="flex py-3">
           {/* logo */}
           <Link href={"/"}>
             <Image
               src={"/NTAlogo.png"}
-              width={250}
-              height={48}
+              width={500}
+              height={70}
               alt=""
               priority={true}
   />
           </Link>
 
           {/* socials */}
+          <Socials />
         </div>
-      
+      </div>
     </header>
   );
 };
