@@ -73,6 +73,8 @@ import Avatar from "../../components/Avatar";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
+import UTA from '/public/UTAlogo.png';
+import AMA from '/public/AMAlogo2.png';
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -89,7 +91,7 @@ const About = () => {
         exit="hidden"
         className="hidden xl:flex absolute bottom-0 -left-[370px]"
       >
-        <Avatar />
+        {/*<Avatar />*/}
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 mb-0">
         <div className="flex-1 flex flex-col justify-center xl:mb-4 mt-0 mb-0">
@@ -125,14 +127,14 @@ const About = () => {
           >
             <div className="hidden mx-auto sm:flex flex-1 mb-0">
               <Image
-                src={"/../public/AMAlogo2.png"}
+                src={AMA}
                 width={100}
                 height={100}
                 alt=""
                 className="w-full h-full max-w-[215px] max-h-[215px]"
               />{" "}
               <Image
-                src={"/../public/UTAlogo.png"}
+                src={UTA}
                 width={100}
                 height={100}
                 alt=""
