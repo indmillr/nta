@@ -182,7 +182,7 @@ const TestimonialSlider = () => {
                   {pattern.title}
                 </div>
                 {/* message */}
-                <div className="text-left lg:text-justify mb-8">
+                <div className="text-justify mb-8">
                   {pattern.meaning}
                 </div>
               </div>
