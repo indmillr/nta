@@ -22,7 +22,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-black text-center max-w-sm xl:max-w-xl mx-auto mb-10 xl:mb-16"
+            className="text-black text-center max-w-sm xl:max-w-xl mx-auto mb-5 xl:mb-16"
           >
             <span className="text-blue-600 font-semibold">
               Nixa TaeKwon-Do Academy
@@ -39,7 +39,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-center mb-12"
+            className="h2 text-center mb-6"
           >
             Want to <span className="text-accent">know</span> more?
           </motion.h2>
