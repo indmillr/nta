@@ -20,7 +20,7 @@ import {
 import { FreeMode, Pagination } from "swiper";
 
 // data
-const serviceData = [
+const scheduleData = [
   {
     title: "MON",
     time1: "5:00",
@@ -61,7 +61,7 @@ const serviceData = [
     description2: "SPARRING",
   },
 ];
-const ServiceSlider = () => {
+const ScheduleSlider = () => {
   return (
     <Swiper
       breakpoints={{
@@ -89,7 +89,7 @@ const ServiceSlider = () => {
       modules={[FreeMode, Pagination]}
       className="h-[240px] sm:h-[340px]"
     >
-      {serviceData.map((item, index) => {
+      {scheduleData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
             <div className="h-max bg-black/10 rounded-lg px-4 pt-4 mr-4 pb-0 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-black/20 transition-all duration-300">
@@ -126,4 +126,4 @@ const ServiceSlider = () => {
   );
 };
 
-export default ServiceSlider;
+export default ScheduleSlider;

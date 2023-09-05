@@ -1,5 +1,5 @@
 // testimonial data
-const testimonialData = [
+const formsData = [
   {
     image: "/white.png",
     title: "Chon Ji",
@@ -132,7 +132,7 @@ import { Navigation, Pagination } from "swiper";
 // icons
 import Image from "next/image";
 
-const TestimonialSlider = () => {
+const FormsSlider = () => {
   return (
     <Swiper
       navigation={true}
@@ -142,7 +142,7 @@ const TestimonialSlider = () => {
       modules={[Navigation, Pagination]}
       className="h-[450px]"
     >
-      {testimonialData.map((pattern, index) => {
+      {formsData.map((pattern, index) => {
         return (
           <SwiperSlide key={index}>
             <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16 mt-3">
@@ -194,4 +194,4 @@ const TestimonialSlider = () => {
   );
 };
 
-export default TestimonialSlider;
+export default FormsSlider;

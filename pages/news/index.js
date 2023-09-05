@@ -1,11 +1,11 @@
 // components
-import WorkSlider from "../../components/WorkSlider";
+import NewsSlider from "../../components/NewsSlider";
 
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
-const Work = () => {
+const News = () => {
   return (
     <div className="h-full bg-primary text-black py-36 flex items-center">
       <div className="container mx-auto">
@@ -40,7 +40,7 @@ const Work = () => {
             exit="hidden"
             className="w-full xl:max-w-[65%]"
           >
-            <WorkSlider />
+            <NewsSlider />
           </motion.div>
         </div>
       </div>
@@ -48,4 +48,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default News;

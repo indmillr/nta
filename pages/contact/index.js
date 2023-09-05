@@ -71,10 +71,10 @@ const Contact = () => {
           >
             {/* input group */}
             <div className="flex gap-x-6 w-full">
-              <input type="text" placeholder="name" className="input" name="user_name" />
-              <input type="text" placeholder="email" className="input" name="user_email" />
+              <input type="text" placeholder="Name" className="input" name="user_name" />
+              <input type="text" placeholder="Email" className="input" name="user_email" />
             </div>
-            <textarea placeholder="message" className="textarea" name="user_message"></textarea>
+            <textarea placeholder="Message" className="textarea" name="user_message"></textarea>
             <button type="submit" className="btn rounded-full border border-black max-w-[170px] px-8 transition-all duration-300 hover:bg-blue-600 flex items-center justify-center overflow-hidden hover:border-accent group">
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Send

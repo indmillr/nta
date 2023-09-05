@@ -1,11 +1,11 @@
 // components
-import TestimonialSlider from "../../components/TestimonialSlider";
+import FormsSlider from "../../components/FormsSlider";
 
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
-const Testimonials = () => {
+const Forms = () => {
   return (
     <div className="h-full bg-primary py-32 text-center text-black">
       <div className="container mx-auto h-full flex flex-col justify-center">
@@ -26,11 +26,11 @@ const Testimonials = () => {
           animate="show"
           exit="hidden"
         >
-          <TestimonialSlider />
+          <FormsSlider />
         </motion.div>
       </div>
     </div>
   );
 };
 
-export default Testimonials;
+export default Forms;

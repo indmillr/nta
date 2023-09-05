@@ -1,16 +1,13 @@
 // components
-import ServiceSlider from "../../components/ServiceSlider";
-import Bulb from "../../components/Bulb";
-import Circles from "../../components/Circles";
+import ScheduleSlider from "../../components/ScheduleSlider";
 
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
-const Services = () => {
+const Schedule = () => {
   return (
     <div className="h-full bg-primary py-36 flex items-center text-black">
-      <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}
@@ -58,7 +55,7 @@ const Services = () => {
             exit="hidden"
             className="w-full xl:max-w-[65%] xl:mt-12"
           >
-            <ServiceSlider />
+            <ScheduleSlider />
           </motion.div>
         </div>
       </div>
@@ -66,4 +63,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Schedule;

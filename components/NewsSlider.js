@@ -1,5 +1,5 @@
 // data
-const workSlides = {
+const newsSlides = {
   slides: [
     {
       images: [
@@ -59,7 +59,7 @@ import { Pagination } from "swiper";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 
-const WorkSlider = () => {
+const NewsSlider = () => {
   return (
     <Swiper
       spaceBetween={10}
@@ -69,7 +69,7 @@ const WorkSlider = () => {
       modules={[Pagination]}
       className="h-[400px] sm:h-[620px]"
     >
-      {workSlides.slides.map((slide, index) => {
+      {newsSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
@@ -99,4 +99,4 @@ const WorkSlider = () => {
   );
 };
 
-export default WorkSlider;
+export default NewsSlider;
