@@ -42,10 +42,10 @@ const Contact = () => {
             <span className="text-blue-600 font-semibold">
               Nixa TaeKwon-Do Academy
             </span>
-            <br />
+            <br /><a href="https://www.google.com/maps/place/1001+Hawk's+Perch,+Nixa,+MO+65714/" target="_blank">
             1001B Hawks Perch Ave
             <br />
-            Nixa, MO 65714
+            Nixa, MO 65714</a>
             <br />
             <span className="text-accent font-semibold"><a href="tel:417-860-5220">(417) 860-5220</a></span>
           </motion.p>
