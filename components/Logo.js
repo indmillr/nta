@@ -4,10 +4,8 @@ import Image from "next/image";
 // next link
 import Link from "next/link";
 
-// icons
-import { HiArrowRight } from "react-icons/hi2";
 
-const ProjectsBtn = () => {
+const Logo = () => {
   return (
     <div className="mx-auto xl:mx-0">
       <Link
@@ -26,4 +24,4 @@ const ProjectsBtn = () => {
   );
 };
 
-export default ProjectsBtn;
+export default Logo;

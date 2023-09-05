@@ -56,7 +56,6 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
 // icons
-import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 
 const NewsSlider = () => {
