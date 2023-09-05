@@ -179,7 +179,7 @@ const About = () => {
                     {item.title}
                   </div>
                   <div className="hidden md:flex"></div>
-                  <div className="">{item.stage}</div>
+                  <div className="font-semibold">{item.stage}</div>
                   <div className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
