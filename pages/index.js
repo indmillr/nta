@@ -37,7 +37,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-black max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="text-black max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-8 xl:mb-14"
           >
             NTA has been in business for over 20 years. We specialize in
             TaeKwon-Do and Tactical Self-Defense for individuals of all ages.
@@ -47,7 +47,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-black max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="text-black max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-8 xl:mb-14"
           >
             <span className="text-blue-600 font-semibold">
               Chief Instructor and Owner

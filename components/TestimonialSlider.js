@@ -145,7 +145,7 @@ const TestimonialSlider = () => {
       {testimonialData.map((pattern, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
+            <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16 mt-3">
               {/* avatar, name, position */}
               <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
                 <div className="flex flex-col justify-center text-center">
@@ -162,13 +162,13 @@ const TestimonialSlider = () => {
                   {/* position */}
                     <span className="ml-2 text-xl uppercase font-bold tracking-widest">{pattern.belt} Belt</span>
                     </div>
-                  <div className="flex flex-col justify-center">
+                  <div className="flex flex-col justify-center mb-5 font-bold">
                     <div>
-                      <span className="text-[12px] uppercase font-light tracking-widest">
+                      <span className="text-[12px] uppercase font-normal tracking-widest">
                         MOVES:{" "}
                       </span>{" "}
-                      {pattern.moves}  <span className="text-[12px] ml-3 uppercase font-light tracking-widest">
-                        foot:{" "}
+                      {pattern.moves}  <span className="text-[12px] ml-3 uppercase font-normal tracking-widest">
+                        return foot:{" "}
                       </span>{" "}
                       {pattern.foot}
                     </div>
