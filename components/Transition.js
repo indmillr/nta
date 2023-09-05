@@ -28,7 +28,6 @@ const Transition = () => {
         exit="exit"
         transition={{ delay: 0.1, duration: 0.5, ease: "easeInOut" }}
       >
-        1
       </motion.div>
       <motion.div
         className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#ee1111]"
@@ -38,7 +37,6 @@ const Transition = () => {
         exit="exit"
         transition={{ delay: 0.3, duration: 0.5, ease: "easeInOut" }}
       >
-        1
       </motion.div>
       <motion.div
         className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#111111]"
@@ -48,7 +46,6 @@ const Transition = () => {
         exit="exit"
         transition={{ delay: 0.5, duration: 0.5, ease: "easeInOut" }}
       >
-        1
       </motion.div>
     </>
   );

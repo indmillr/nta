@@ -14,13 +14,13 @@ const Header = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8">
           {/* logo */}
           <Link href={"/"}>
-            {/* <Image
-              src={"/logo.svg"}
+            <Image
+              src={"/NTAlogo.png"}
               width={300}
               height={48}
               alt=""
               priority={true}
-  /> */}
+  />
           </Link>
 
           {/* socials */}
