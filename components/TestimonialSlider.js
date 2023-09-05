@@ -159,7 +159,7 @@ const TestimonialSlider = () => {
                     />
                   </div>
                   {/* position */}
-                  <div className="uppercase font-bold tracking-widest">{pattern.belt}</div>
+                  <div className="text-xl uppercase font-bold tracking-widest">{pattern.belt}</div>
                   <div className="flex flex-col text-left">
                     <div>
                       <span className="text-[12px] uppercase font-light tracking-widest">
