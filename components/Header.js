@@ -24,7 +24,6 @@ const Header = () => {
           </Link>
 
           {/* socials */}
-          <Socials />
         </div>
       </div>
     </header>

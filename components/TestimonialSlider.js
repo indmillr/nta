@@ -150,7 +150,7 @@ const TestimonialSlider = () => {
               <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
                 <div className="flex flex-col justify-center text-center">
                   {/* avatar */}
-                  <div className="mb-2 mx-auto">
+                  <div className="mb-2 hidden sm-flex mx-auto">
                     <Image
                       src={pattern.image}
                       width={100}
@@ -174,9 +174,9 @@ const TestimonialSlider = () => {
                 </div>
               </div>
               {/* quote & message */}
-              <div className="flex-1 flex flex-col justify-center items-center before:w-[1px] xl:before:bg-black/50 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
+              <div className="flex-1 flex flex-col items-center mt-2 before:w-[1px] lg:before:bg-black/50 lg:before:absolute lg:before:left-0 lg:before:h-[200px] relative lg:pl-20">
                 {/* quote icon */}
-                <div className="mb-2 lg:mb-4 mt-0 lg:mt-0 text-blue-600 md:text-2xl font-bold lg:font-normal lg:text-3xl uppercase tracking-widest">
+                <div className="mb-2 lg:mb-4 mt-0 lg:mt-0 text-blue-600 text-xl md:text-2xl font-bold lg:font-normal lg:text-3xl uppercase tracking-widest">
                   {pattern.title}
                 </div>
                 {/* message */}
