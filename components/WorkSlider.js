@@ -67,7 +67,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[480px]"
+      className="h-[400px] sm:h-[620px]"
     >
       {workSlides.slides.map((slide, index) => {
         return (
@@ -79,12 +79,12 @@ const WorkSlider = () => {
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group"
                     key={index}
                   >
-                    <div className="flex items-center justify-center relative overflow-hidden group">
+                    <div className="flex items-center justify-center hover:scale-150 transition duration-500 object-cover relative overflow-hidden group">
                       {/* image */}
                       <Image src={image.path} width={500} height={300} alt="" />
 
                       {/* overlay gradient */}
-                      <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
+                      <div className="absolute inset-0 opacity-0 group-hover:scale-110 transition-all duration-700"></div>
 
                       {/* title */}
                     </div>
