@@ -159,7 +159,7 @@ const About = () => {
                   className={`${
                     index === itemIndex &&
                     "text-accent after:w-[100%] after:bg-black/50 after:transition-all after:duration-300 font-semibold"
-                  } cursor-pointer capitalize md:text-lg relative after:w-0 after:h-[2px] after:bg-black/50 after:absolute md:font-semibold after:-bottom-1 after:left-0`}
+                  } cursor-pointer capitalize text-sm md:text-lg relative after:w-0 after:h-[2px] after:bg-black/50 after:absolute md:font-semibold after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
